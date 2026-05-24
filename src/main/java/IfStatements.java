@@ -44,7 +44,7 @@ public class IfStatements {
      */
     public String exercise3(int year) {
         if (year % 4 != 0) return "No"; 
-            else{
+        else{
             if(year % 4 == 0)
             {
                 if ( (year % 100 == 0) && (year % 400 == 0) ) return "Yes";
@@ -52,6 +52,6 @@ public class IfStatements {
                         return "No"; 
             }
         }
-        return "Yes";
+        return "No";
     }
 }
