@@ -48,10 +48,11 @@ public class IfStatements {
             if(year % 4 == 0)
             {
                 if ( (year % 100 == 0) && (year % 400 == 0) ) return "Yes";
-                    else 
-                        return "No"; 
-            }
+                    else if((year % 100 == 0 ) && (year % 400 != 0) ) return "Not quite";
+                       else return "Yes"; 
+                    }
+             else return "No";           
         }
-        return "No";
+     
     }
 }
